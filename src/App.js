@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Routes, Route, Link } from 'react-router-dom';
+import Home from './components/Home';
+import Team from './components/Team';
+import Map from './components/Map';
+import Project from './components/Project';
+import ThemeToggle from './components/ThemeToggle';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <nav>
+                <ul>
+                    <li><ThemeToggle /></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/team">Team Members</Link></li>
+                    <li><Link to="/map">Interactive Map</Link></li>
+                    <li><Link to="/project">Projects</Link></li>
+                </ul>
+            </nav>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/team" element={<Team />} />
+                <Route path="/map" element={<Map />} />
+                <Route path="/project" element={<Project />} />
+            </Routes>
+        </div>
+    );
 }
 
 export default App;
