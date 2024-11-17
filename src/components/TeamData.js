@@ -34,14 +34,14 @@ const teamData=[
         name: 'Vijay Akkenapally',
         avatar: '/assets/i3.jpg',
         interest: 'Data Engineering',
-        hometown: 'Hyderabad'
+        hometown: 'Vijayvada'
     },
     {
 
         name: 'Shravya Vemula',
         avatar: '/assets/i8.png',
         interest: 'Web Development .',
-        hometown: 'Hyderabad'
+        hometown: 'Warangal'
     },
     {
         name: 'Nageswar chodisetti',

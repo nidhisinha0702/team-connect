@@ -9,7 +9,7 @@ function Team() {
             <div className="card-container">
                 {teamData.map(member => (
                     <div key={member.name} className="member">
-                        <img src={member.avatar} alt={member.name} />
+                        <img src={member.avatar} alt={member.name}  className='img-avatar'/>
                         <h3>{member.name}</h3>
                         <p>Interests: {member.interest}</p>
                         <p>Hometown: {member.hometown}</p>

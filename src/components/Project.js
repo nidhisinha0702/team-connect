@@ -6,8 +6,7 @@ function Project() {
     const openDeviceDemo = () => {
         document.querySelector("button").addEventListener("click", () => {
             console.log("Button clicked!");
-          });
-          alert("Button clicked!");          
+          });        
       window.open('/devicedemo/index.html', '_blank');
     };
     return (
